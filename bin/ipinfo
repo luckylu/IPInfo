@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'ipinfo'
+p = Ipinfo.new(ARGV[0])
+p.getinfo

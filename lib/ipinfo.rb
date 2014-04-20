@@ -1,6 +1,6 @@
 require 'open-uri'
 require 'json'
-class IpInfo
+class Ipinfo
   def initialize(ip)
   	@ip = ip
   end
@@ -29,5 +29,5 @@ class IpInfo
     end
   end
 end
-p = IpInfo.new(ARGV[0])
-p.getinfo
+
+
