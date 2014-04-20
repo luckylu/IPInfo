@@ -8,7 +8,6 @@ class IpInfo
   begin
     @contents = URI.parse("http://ip.taobao.com/service/getIpInfo.php?ip=#@ip").read
   rescue Expection
-    puts "服务器不给力"
     retry
   end
     @info = JSON.parse(@contents)
